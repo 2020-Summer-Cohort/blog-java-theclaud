@@ -1,0 +1,31 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+header h1 {
+    float: left;
+    padding-left: 1rem;
+}
+.container {
+    margin: 0 auto;
+    width: 1000px;
+  }
+  .posts{
+    margin: 1rem;
+    
+  }
+  .post{
+    float: left;
+    margin: 1%;
+    width: 48%;
+  }
+  .post header, .post .content{
+    padding: 1rem;
+  }
+  .post:last-child{
+    margin-right: 0;
+  }
+  footer{
+    text-align: center;
+  }

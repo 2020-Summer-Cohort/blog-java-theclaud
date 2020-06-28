@@ -1,0 +1,37 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+footer{
+    padding: 1 rem;
+}
+footer nav ul{
+    text-align:  center;
+}
+.page-title {
+    text-align: center;
+    color: aquamarine;
+}
+body {
+    /* background-color: #39add1; */
+    background-image:url("images/tankpic.jpg")
+  }
+  
+.container {
+    background-color: #ddd;
+    border-radius: 12px;
+    margin: 20px auto;
+    width: 70%;
+  }
+  header {
+    align-items: center;
+    background-color: #333;
+    border-radius: 12px 12px 0 0;
+    color: #ddd;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 20px 0;
+  }
+  
