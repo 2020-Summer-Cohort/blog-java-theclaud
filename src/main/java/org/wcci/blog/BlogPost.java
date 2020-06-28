@@ -1,15 +1,21 @@
 package org.wcci.blog;
 
 
+import java.util.Collection;
+
 public class BlogPost {
 
     private String title;
     private String description;
     private String author;
     private String postedDate;
-    private String hashtags;
+    private Collection<Hashtags> hashtags;
 
-    public BlogPost(String title, String description, String author, String postedDate, String hashtags) {
+    protected BlogPost(){
+
+    }
+
+    public BlogPost(String title, String description, String author, String postedDate, Collection<Hashtags> hashtags) {
         this.title = title;
         this.description = description;
         this.author = author;
@@ -33,7 +39,5 @@ public class BlogPost {
         return postedDate;
     }
 
-    public String getHashtags() {
-        return hashtags;
-    }
+    public Collection<Hashtags> getHashtags() { return hashtags;}
 }
