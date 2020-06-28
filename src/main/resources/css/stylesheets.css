@@ -5,16 +5,14 @@
 }
 footer{
     padding: 1 rem;
-}
-footer nav ul{
     text-align:  center;
+    color: aquamarine;
 }
 .page-title {
     text-align: center;
     color: aquamarine;
 }
 body {
-    /* background-color: #39add1; */
     background-image:url("images/tankpic.jpg")
   }
   
@@ -24,7 +22,7 @@ body {
     margin: 20px auto;
     width: 70%;
   }
-  header {
+  /* header {
     align-items: center;
     background-color: #333;
     border-radius: 12px 12px 0 0;
@@ -33,5 +31,5 @@ body {
     justify-content: space-between;
     margin: 0 auto;
     padding: 20px 0;
-  }
+  } */
   
