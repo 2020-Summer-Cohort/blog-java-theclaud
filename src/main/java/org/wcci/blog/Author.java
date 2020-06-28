@@ -6,9 +6,9 @@ public class Author {
 
     private String firstName;
     private String lastName;
-    private Collection<Reviews> reviews;
+    private Collection<BlogPost> reviews;
 
-    public Author(String firstName, String lastName, Collection<Reviews> reviews) {
+    public Author(String firstName, String lastName, Collection<BlogPost> reviews) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.reviews = reviews;
@@ -22,7 +22,7 @@ public class Author {
         return lastName;
     }
 
-    public Collection<Reviews> getReviews() {
+    public Collection<BlogPost> getReviews() {
         return reviews;
     }
 }

@@ -1,7 +1,7 @@
 package org.wcci.blog;
 
 
-public class Reviews {
+public class BlogPost {
 
     private String title;
     private String description;
@@ -9,7 +9,7 @@ public class Reviews {
     private String postedDate;
     private String hashtags;
 
-    public Reviews(String title, String description, String author, String postedDate, String hashtags) {
+    public BlogPost(String title, String description, String author, String postedDate, String hashtags) {
         this.title = title;
         this.description = description;
         this.author = author;

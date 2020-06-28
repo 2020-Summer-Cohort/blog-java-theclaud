@@ -2,13 +2,13 @@ package org.wcci.blog;
 
 import java.util.Collection;
 
-public class Categories {
+public class BlogPage {
 
     private String name;
     private String description;
-    private Collection<Reviews> review;
+    private Collection<BlogPost> review;
 
-    public Categories(String name, String description, Collection<Reviews> review) {
+    public BlogPage(String name, String description, Collection<BlogPost> review) {
         this.name = name;
         this.description = description;
         this.review = review;
@@ -22,7 +22,7 @@ public class Categories {
         return description;
     }
 
-    public Collection<Reviews> getReview() {
+    public Collection<BlogPost> getReview() {
         return review;
     }
 }
