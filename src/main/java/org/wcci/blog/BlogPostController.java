@@ -3,6 +3,7 @@ package org.wcci.blog;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
@@ -37,10 +38,17 @@ public class BlogPostController {
 //
 //        }
 
-    @RequestMapping("/blogPost") // this is the end point
-        public String showSinglePost(Model model){
+    @RequestMapping("posts/{postTitle") // this is the end point
+        public String showSinglePost(@PathVariable String postTitle, Model model){
         model.addAttribute("postToDisplay", post);
         return "blogpost-template";
     }
+
 }
+//this is on campuslibraries
+//    @RequestMapping("books/{bookTitle}")
+//    public String showSingleBook(@PathVariable String bookTitle, Model model) {
+//        model.addAttribute("bookToDisplay", bookStorage.findBookByTitle(bookTitle));
+//        return "book-template";
+//    }
 
