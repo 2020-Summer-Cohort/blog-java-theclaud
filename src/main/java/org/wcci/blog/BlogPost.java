@@ -5,38 +5,38 @@ import java.util.Collection;
 
 public class BlogPost {
 
-    private String title;
-    private String description;
+    private String postTitle;
+    private String postDescription;
     private String author;
-    private String postedDate;
+    private String postDate;
     private Collection<Hashtags> hashtags;
 
     protected BlogPost(){
 
     }
 
-    public BlogPost(String title, String description, String author, String postedDate, Collection<Hashtags> hashtags) {
-        this.title = title;
-        this.description = description;
+    public BlogPost(String postTitle, String postDescription, String author, String postDate, Collection<Hashtags> hashtags) {
+        this.postTitle = postTitle;
+        this.postDescription = postDescription;
         this.author = author;
-        this.postedDate = postedDate;
+        this.postDate = postDate;
         this.hashtags = hashtags;
     }
 
-    public String getTitle() {
-        return title;
+    public String getPostTitle() {
+        return postTitle;
     }
 
-    public String getDescription() {
-        return description;
+    public String getPostDescription() {
+        return postDescription;
     }
 
     public String getAuthor() {
         return author;
     }
 
-    public String getPostedDate() {
-        return postedDate;
+    public String getPostDate() {
+        return postDate;
     }
 
     public Collection<Hashtags> getHashtags() { return hashtags;}

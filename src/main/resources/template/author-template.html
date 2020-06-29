@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Document</title>
+</head>
+<body>
+<h1 th:text="${author.firstName} + ' ' + ${author.lastName}" class="author__name">Leia Alderran</h1>
+
+
+<ul class="posts__list">
+    <li th:each="blogPost: ${author.posts}" class="posts__list-item">
+        <a th:text="${blogPost.postTitle}" th:href="@{'/posts/+${blogPost.postTitle}}" class="posts__link">Angel Fish</a>
+    </li>
+</ul>
+
+
+</body>
+</html>
