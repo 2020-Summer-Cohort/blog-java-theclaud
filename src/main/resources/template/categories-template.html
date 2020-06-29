@@ -1,0 +1,19 @@
+<body xmlns:th="http://www.w3.org/1999/xhtml">
+<header>
+    <h1 th:text="${category.title}">Bottom Dwelling Fish</h1>
+    <p th: text="${category.description}"> The following dwellers are fun to look at when they allow you to, they
+        like to hide under rocks and drift wood. Their aggressive nature when
+        feeding them is exciting to see, each with their unique pattern.
+        Definitely a great addition to your growing fish aquarium. </p>
+</header>
+<main>
+    <ul>
+        <li th:each="posts:${categories}"><a href="Corydoras.html"> Corydora Sterbai</a></li>
+        <li><a th:text="${posts.postName}">href="Plecos.html"> Columbian Zebra Pleco</a></li>
+    </ul>
+</main>
+<footer>
+    <a href="./blog.html">Back To Homepage!</a>
+</footer>
+</body>
+</html>
