@@ -11,6 +11,7 @@
 </header>
 
 <main>
+    <section class="blogpost">
     <p th:text="${postToDisplay.postDescription}">Angel Fish are graceful when they're swimming around.I enjoy watching them move around and show off their fins,
         the way they flow with the water is magical to see. The Angel fish grows to be 8 inches big and they vary in pattern
         The Marbled Angel has a mix of black,blue and gray. A classic must have for your growing aquarium.
@@ -19,6 +20,7 @@
     <p th:text="${postToDisplay.postDate"> Posted:6/26/20</p>
     <p th:each="hashtag: ${hashtags}" th:text="$hashtag.hashTagName">hashtags: #colorful #underwaterworld  </p>
 <!--    <div th:each="widget: ${widgets}" th:text="${widget.name}" />-->
+    </section>
 </main>
 <footer>
     <a href="./category2.html">Back To Top Dwellers</a>
