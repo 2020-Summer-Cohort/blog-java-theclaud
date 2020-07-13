@@ -8,7 +8,6 @@ a {
 }
 body {
     background-image: url("images/tankpic.jpg")
-  
 }
 footer{
     padding: 1 rem;
@@ -19,6 +18,26 @@ footer{
 h1 , h2{
     color: blue;
     text-align: center;
+}
+img{
+    align-content: center;
+}
+
+ul {
+    text-align: inline;
+}
+p{
+    color: blue;
+}
+
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+}
+.categories{
+    display: inline-block;
 }
 .page-title {
     text-align: center;
@@ -31,7 +50,13 @@ h1 , h2{
     border-radius: 12px;
     margin: 20px auto;
     width: 70%;
+    height: 100%;
   }
+
+  .main__info {
+      color: blue;
+  }
+
   /* header {
     align-items: center;
     background-color: #333;
