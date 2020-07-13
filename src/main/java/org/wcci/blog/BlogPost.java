@@ -1,6 +1,8 @@
 package org.wcci.blog;
 
 
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collection;
 
 public class BlogPost {
@@ -15,13 +17,14 @@ public class BlogPost {
 
     }
 
-    public BlogPost(String postTitle, String postDescription, String author, String postDate, Collection<Hashtags> hashtags) {
+    public BlogPost(String postTitle, String postDescription, String author, String postDate, Hashtags...hashtags) {
         this.postTitle = postTitle;
         this.postDescription = postDescription;
         this.author = author;
         this.postDate = postDate;
-        this.hashtags = hashtags;
+        this.hashtags = new ArrayList<>(Arrays.asList(hashtags));
     }
+
 
     public String getPostTitle() {
         return postTitle;

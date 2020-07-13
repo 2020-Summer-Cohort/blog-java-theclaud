@@ -2,13 +2,13 @@ package org.wcci.blog;
 
 import java.util.Collection;
 
-public class Category {
+public class Categories {
 
     private String title;
     private String description;
     private Collection<BlogPost> posts;
 
-    public Category(String title, String description, Collection<BlogPost> posts) {
+    public Categories(String title, String description, Collection<BlogPost> posts) {
         this.title = title;
         this.description = description;
         this.posts = posts;

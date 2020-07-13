@@ -3,21 +3,31 @@
     margin: 0;
     padding: 0;
 }
+a {
+    color: blue;
+}
+body {
+    background-image: url("images/tankpic.jpg")
+  
+}
 footer{
     padding: 1 rem;
     text-align:  center;
-    color: aquamarine;
+    color: blue;
+}
+
+h1 , h2{
+    color: blue;
+    text-align: center;
 }
 .page-title {
     text-align: center;
-    color: aquamarine;
+    color: blue;
 }
-body {
-    background-image:url("images/tankpic.jpg")
-  }
-  
+
 .container {
     background-color: #ddd;
+    color: black;
     border-radius: 12px;
     margin: 20px auto;
     width: 70%;
@@ -32,4 +42,3 @@ body {
     margin: 0 auto;
     padding: 20px 0;
   } */
-  
