@@ -1,4 +1,6 @@
-package org.wcci.blog;
+package org.wcci.blog.entities;
+
+import org.wcci.blog.entities.BlogPost;
 
 import java.util.Collection;
 

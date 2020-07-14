@@ -1,4 +1,4 @@
-package org.wcci.blog;
+package org.wcci.blog.storage;
 
 public class CategoriesStorage {
 

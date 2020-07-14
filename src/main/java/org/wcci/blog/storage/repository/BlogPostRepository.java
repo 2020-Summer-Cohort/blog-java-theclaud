@@ -1,4 +1,6 @@
-package org.wcci.blog;
+package org.wcci.blog.storage.repository;
+
+import org.wcci.blog.entities.BlogPost;
 
 import java.util.HashMap;
 import java.util.Map;
