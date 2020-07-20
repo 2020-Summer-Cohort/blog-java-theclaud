@@ -1,12 +1,20 @@
 package org.wcci.blog.entities;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
 import java.util.Collection;
 
+@Entity
 public class Author {
 
+    @Id
+    @GeneratedValue
     private String firstName;
     private String lastName;
     private Collection<BlogPost> posts;
+
+    protected  Author(){}
 
     public Author(String firstName, String lastName, Collection<BlogPost> posts) {
         this.firstName = firstName;

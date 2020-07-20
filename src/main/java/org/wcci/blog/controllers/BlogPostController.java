@@ -18,7 +18,7 @@ public class BlogPostController {
         this.hashtagsStorage = hashtagsStorage;
     }
 
-    @RequestMapping("blogPost/{postTitle") // this is the end point
+    @RequestMapping("blogPost/{postTitle")
     public String showSinglePost(@PathVariable String postTitle, Model model) {
         model.addAttribute("postToDisplay", blogPostStorage.findBlogPostByPostTitle(postTitle));
         return "blogpost-template";

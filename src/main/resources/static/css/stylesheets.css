@@ -10,24 +10,43 @@ body {
     background-image: url("images/tankpic.jpg")
 }
 footer{
+    background-color: #ddd ;
+    
     padding: 1 rem;
     text-align:  center;
     color: blue;
+    border-radius: 12px;
+    margin: 20px auto;
+    width: 20%;;
+    height: 10%;
 }
 
 h1 , h2{
-    color: blue;
     text-align: center;
 }
+
+header {
+    background-color: #ddd;
+    color: blue;
+    
+} 
+/* header {
+    align-items: center;
+    background-color: #333;
+    border-radius: 12px 12px 0 0;
+    color: #ddd;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 20px 0;
+  } */
+
 img{
     align-content: center;
 }
 
 ul {
     text-align: inline;
-}
-p{
-    color: blue;
 }
 
 .center{
@@ -41,29 +60,12 @@ p{
 }
 .page-title {
     text-align: center;
-    color: blue;
 }
 
-.container {
+.post {
     background-color: #ddd;
-    color: black;
-    border-radius: 12px;
-    margin: 20px auto;
-    width: 70%;
-    height: 100%;
-  }
+    color: blue;
+    
+}
 
-  .main__info {
-      color: blue;
-  }
-
-  /* header {
-    align-items: center;
-    background-color: #333;
-    border-radius: 12px 12px 0 0;
-    color: #ddd;
-    display: flex;
-    justify-content: space-between;
-    margin: 0 auto;
-    padding: 20px 0;
-  } */
+  
