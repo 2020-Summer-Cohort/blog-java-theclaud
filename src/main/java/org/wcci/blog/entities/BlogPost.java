@@ -9,7 +9,7 @@ public class BlogPost {
 
 
     private String postTitle;
-    private String postDescription;
+    private String postContent;
     private String author;
     private String postDate;
     private Collection<Hashtags> hashtags;
@@ -19,9 +19,9 @@ public class BlogPost {
 
     }
 
-    public BlogPost(String postTitle, String postDescription, String author, String postDate, Hashtags...hashtags) {
+    public BlogPost(String postTitle, String postContent, String author, String postDate, Hashtags...hashtags) {
         this.postTitle = postTitle;
-        this.postDescription = postDescription;
+        this.postContent = postContent;
         this.author = author;
         this.postDate = postDate;
         this.hashtags = new ArrayList<>(Arrays.asList(hashtags));
@@ -32,8 +32,8 @@ public class BlogPost {
         return postTitle;
     }
 
-    public String getPostDescription() {
-        return postDescription;
+    public String getPostContent() {
+        return postContent;
     }
 
     public String getAuthor() {
