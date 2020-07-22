@@ -1,29 +1,72 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="css/layout.css" rel="layout" type="text/css" />
+    <link href="css/stylesheets.css" rel="stylesheet" type="text/css" />
     <title>Angel Fish</title>
 </head>
 <body>
-<header>
-    <h1 th:text="${postToDisplay.postTitle}">The Marbled Angel Fish</h1>
-</header>
+<div class="container">
+    <header>
+        <h1 th:text="${blogPost.postTitle}">The Marbled Angel Fish</h1>
+        <img src="./css/angel.jpg" alt="AngelFish Image" class="center" />
+    </header>
+    <main>
+        <p th:text="${blogPost.postContent}">
+            Angel Fish are graceful when they're swimming around.I enjoy watching
+            them move around and show off their fins, the way they flow with the
+            water is magical to see. The Angel fish grows to be 8 inches big and
+            they vary in pattern The Marbled Angel has a mix of black,blue and
+            gray. A classic must have for your growing aquarium.
+        </p>
+        <p th:text="${blogPost.author"><a href="./authorLeia.html">Written By: Leia Alderran</a></p>
+        <p th:text="${blogPost.postDate">Posted:6/26/20</p>
+        <ul>
+            <li th:each="hashtag: ${blogPost.hashtags}">
+                <a th:text="${hashtags.hashtagName}"  th:href="@{'/hashtags/'${hashtags.hashtagName}}">
 
-<main>
-    <section class="blog__post">
-    <p th:text="${postToDisplay.postContent}">Angel Fish are graceful when they're swimming around.I enjoy watching them move around and show off their fins,
-        the way they flow with the water is magical to see. The Angel fish grows to be 8 inches big and they vary in pattern
-        The Marbled Angel has a mix of black,blue and gray. A classic must have for your growing aquarium.
-    </p>
-    <p th:text="${postToDisplay.author">Written By:Luke Walker</p>
-    <p th:text="${postToDisplay.postDate"> Posted:6/26/20</p>
-    <p th:each="hashtag: ${hashtags}" th:text="$hashtag.hashTagName">hashtags: #colorful #underwaterworld  </p>
-<!--    <div th:each="widget: ${widgets}" th:text="${widget.name}" />-->
-    </section>
-</main>
-<footer>
-    <a href="./category2.html">Back To Top Dwellers</a>
-</footer>
+<!--                    th:href="@{'/hashtags/'+${hashtags.id}}" this is how we did it in teams-->
+<!--              <a href="underwaterworld.html">#underwaterworld</a> might have to delete not sure-->
+        </li>
+        </ul>
+    </main>
+    <footer>
+        <a href="./category2.html">Back To Top Dwellers</a>
+        <a href="./blog.html">Back To Homepage!</a>
+    </footer>
+</div>
 </body>
 </html>
+
+
+<!--<!DOCTYPE html>-->
+<!--<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+<!--    <title>Angel Fish</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--<header>-->
+<!--    <h1 th:text="${postToDisplay.postTitle}">The Marbled Angel Fish</h1>-->
+<!--</header>-->
+
+<!--<main>-->
+<!--    <section class="blog__post">-->
+<!--    <p th:text="${postToDisplay.postContent}">Angel Fish are graceful when they're swimming around.I enjoy watching them move around and show off their fins,-->
+<!--        the way they flow with the water is magical to see. The Angel fish grows to be 8 inches big and they vary in pattern-->
+<!--        The Marbled Angel has a mix of black,blue and gray. A classic must have for your growing aquarium.-->
+<!--    </p>-->
+<!--    <p th:text="${postToDisplay.author">Written By:Luke Walker</p>-->
+<!--    <p th:text="${postToDisplay.postDate"> Posted:6/26/20</p>-->
+<!--    <p th:each="hashtag: ${hashtags}" th:text="$hashtag.hashTagName">hashtags: #colorful #underwaterworld  </p>-->
+<!--&lt;!&ndash;    <div th:each="widget: ${widgets}" th:text="${widget.name}" />&ndash;&gt;-->
+<!--    </section>-->
+<!--</main>-->
+<!--<footer>-->
+<!--    <a href="./category2.html">Back To Top Dwellers</a>-->
+<!--</footer>-->
+<!--</body>-->
+<!--</html>-->
