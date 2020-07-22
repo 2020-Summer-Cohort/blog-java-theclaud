@@ -7,24 +7,18 @@ import java.util.Collection;
 public class Author {
 
 
-    private String firstName;
-    private String lastName;
+    private String authorName;
     private Collection<BlogPost> posts;
 
     protected  Author(){}
 
     public Author(String firstName, String lastName, Collection<BlogPost> posts) {
-        this.firstName = firstName;
-        this.lastName = lastName;
+        this.authorName = firstName;
         this.posts = posts;
     }
 
     public String getFirstName() {
-        return firstName;
-    }
-
-    public String getLastName() {
-        return lastName;
+        return authorName;
     }
 
     public Collection<BlogPost> getPosts() {

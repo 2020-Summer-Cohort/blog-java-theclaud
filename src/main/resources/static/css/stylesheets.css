@@ -5,6 +5,7 @@
 }
 a {
     color: blue;
+  
 }
 body {
     background-image: url("images/tankpic.jpg")
@@ -22,6 +23,10 @@ footer{
 }
 
 h1 , h2{
+    text-align: center;
+}
+
+ul{
     text-align: center;
 }
 /* 
