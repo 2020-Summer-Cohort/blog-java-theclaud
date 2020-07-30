@@ -13,10 +13,11 @@ import org.wcci.blog.storage.HashtagsStorage;
 public class BlogPostController {
 
     BlogPost post;
+    
     public BlogPostController(){
         post = new BlogPost("Angel Fish", "Angel Fish are graceful when they're swimming around.I enjoy watching them move around and show off their fins,\n" +
                 " the way they flow with the water is magical to see. The Angel fish grows to be 8 inches big and they vary in pattern\n" +
-                " The Marbled Angel has a mix of black,blue and gray. A classic must have for your growing aquarium.", "Leia Alderran", "6/26/20", <Hashtags> );
+                " The Marbled Angel has a mix of black,blue and gray. A classic must have for your growing aquarium.", "Leia Alderran", "6/26/20", "Hashtags");
     }
 
     public String retrievePost(Model model){
