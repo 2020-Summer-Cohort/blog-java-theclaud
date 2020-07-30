@@ -4,13 +4,13 @@ import org.wcci.blog.entities.BlogPost;
 
 import java.util.Collection;
 
-public class Categories {
+public class Category {
 
     private String title;
     private String description;
     private Collection<BlogPost> posts;
 
-    public Categories(String title, String description, Collection<BlogPost> posts) {
+    public Category(String title, String description, Collection<BlogPost> posts) {
         this.title = title;
         this.description = description;
         this.posts = posts;

@@ -1,5 +1,5 @@
 package org.wcci.blog.storage;
 
-public class CategoriesStorage {
+public class CategoryStorage {
 
 }

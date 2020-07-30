@@ -4,16 +4,16 @@ package org.wcci.blog.entities;
 import java.util.Collection;
 
 
-public class Author {
+public class Authors {
 
 
     private String firstName;
     private String lastName;
     private Collection<BlogPost> posts;
 
-    protected  Author(){}
+    protected Authors(){}
 
-    public Author(String firstName, String lastName, Collection<BlogPost> posts) {
+    public Authors(String firstName, String lastName, Collection<BlogPost> posts) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.posts = posts;
