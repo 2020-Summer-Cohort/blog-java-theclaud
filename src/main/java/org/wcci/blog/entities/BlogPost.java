@@ -19,13 +19,13 @@ public class BlogPost {
 
     }
 
-    public BlogPost(String postTitle, String postContent, String author, String postDate, Collection<Hashtags> hashtags) {
+    public BlogPost(String postTitle, String postContent, String author, String postDate, Hashtags... hashtags) {
         this.postTitle = postTitle;
         this.postContent = postContent;
         this.author = author;
         this.postDate = postDate;
-        this.hashtags = hashtags;
-//        this.hashtags = new ArrayList<>(Arrays.asList(hashtags));
+//        this.hashtags = hashtags;
+        this.hashtags = new ArrayList<>(Arrays.asList(hashtags));
     }
 
 
