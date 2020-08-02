@@ -31,6 +31,10 @@ public class BlogPostStorage {
     public BlogPost findBlogPostByPostTitle(String postTitle) {
         return posts.get(postTitle);
     }
+
+    public Object findAllBlogPosts(String postTitle) {
+        return posts.get(postTitle);
+    }
 }
 
 //        return postRepo.findByPostTitle(postTitle);
