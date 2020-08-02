@@ -10,7 +10,9 @@ public class CategoryStorage {
 
     private Map<String, Category> categories = new HashMap<>();
 
-//        categories.put("Top Dwelling Fish", new Category("Top Dwellers", "desc",null)
+    public CategoryStorage(){
+       categories.put("Top Dwelling Fish", new Category("Top Dwellers", "desc",null);
+    }
 
     public Object findCategoryByTitle(String categoryTitle) {
         return categories.get(categoryTitle);

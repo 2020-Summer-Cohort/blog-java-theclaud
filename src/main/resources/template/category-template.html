@@ -9,7 +9,7 @@
 <main>
     <ul>
         <li th:each="posts:${categories}"><a href="Corydoras.html"> Corydora Sterbai</a></li>
-        <li th:text="${posts.postName}"><a href="Plecos.html"> Columbian Zebra Pleco</a></li>
+        <li th:text="${posts.postName}"><a href="@{'/posts/'+${post.title}}"> Columbian Zebra Pleco</a></li>
     </ul>
 </main>
 <footer>
