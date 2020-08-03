@@ -5,11 +5,11 @@ import org.wcci.blog.entities.Authors;
 import java.util.HashMap;
 import java.util.Map;
 
-public class AuthorStorage {
+public class AuthorsStorage {
 
     Map<String, Authors> hashtags = new HashMap<>();
 
-    public AuthorStorage(){
+    public AuthorsStorage(){
 
     }
 
