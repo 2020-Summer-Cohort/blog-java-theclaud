@@ -12,6 +12,8 @@ public class BlogPostStorage {
 
     Map<String, BlogPost> posts = new HashMap<>();
 
+    BookRe
+
     public BlogPostStorage () {
         posts.put("Angel Fish", new BlogPost("Angel Fish", "Angel Fish are graceful when they're swimming around.I enjoy watching\n" +
                 " them move around and show off their fins, the way they flow with the\n" +

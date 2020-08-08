@@ -1,13 +1,17 @@
 package org.wcci.blog.entities;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
 
-
+@Entity
 public class BlogPost {
-
-
+    @Id
+    @GeneratedValue
+    private long id;
     private String postTitle;
     private String postContent;
     private String author;
@@ -15,9 +19,7 @@ public class BlogPost {
     private Collection<Hashtags> hashtags;
 
 
-    protected BlogPost(){
-
-    }
+    protected BlogPost(){ }
 
     public BlogPost(String postTitle, String postContent, String author, String postDate, Hashtags... hashtags) {
         this.postTitle = postTitle;

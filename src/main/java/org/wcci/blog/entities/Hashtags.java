@@ -2,7 +2,11 @@ package org.wcci.blog.entities;
 
 import org.wcci.blog.entities.BlogPost;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
 import java.util.Collection;
+
 
 public class Hashtags {
 

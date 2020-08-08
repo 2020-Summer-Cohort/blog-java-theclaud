@@ -11,7 +11,7 @@ public class CategoryStorage {
     private Map<String, Category> categories = new HashMap<>();
 
     public CategoryStorage(){
-       categories.put("Top Dwelling Fish", new Category("Top Dwellers", "desc",null);
+//       categories.put("Top Dwelling Fish", new Category("Top Dwellers", "desc",null);
     }
 
     public Object findCategoryByTitle(String categoryTitle) {
