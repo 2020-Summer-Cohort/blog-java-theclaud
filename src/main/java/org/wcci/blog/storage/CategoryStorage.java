@@ -15,16 +15,13 @@ public class CategoryStorage {
 
     public CategoryStorage(CategoryRepository categoryRepo) {
         this.categoryRepo = categoryRepo;
-
-
-
     }
 
-    public Object findCategoryByTitle(String categoryTitle) {
-        return categories.get(categoryTitle);
+    public Category findCategoryByTitle(String categoryTitle) {
+        return categoryRepo.findByCategoryTitle(categoryTitle);
     }
 
-    public Collection<Category> findAllCategories() {
-        return categories.values();
+    public Iterable<Category> findAllCategories() {
+        return categoryRepo.findAll();
     }
 }
