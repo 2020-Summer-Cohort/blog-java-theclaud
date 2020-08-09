@@ -3,6 +3,7 @@ package org.wcci.blog.entities;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.ManyToMany;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
@@ -16,7 +17,7 @@ public class BlogPost {
     private String postContent;
     private String author;
     private String postDate;
-    
+    @ManyToMany
     private Collection<Hashtags> hashtags;
 
 

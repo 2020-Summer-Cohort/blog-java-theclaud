@@ -4,10 +4,6 @@ import org.springframework.stereotype.Service;
 import org.wcci.blog.entities.Category;
 import org.wcci.blog.storage.repository.CategoryRepository;
 
-import java.util.Collection;
-import java.util.HashMap;
-import java.util.Map;
-
 @Service
 public class CategoryStorage {
 

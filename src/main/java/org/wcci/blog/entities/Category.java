@@ -1,14 +1,21 @@
 package org.wcci.blog.entities;
 
-import org.wcci.blog.entities.BlogPost;
-
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import java.util.Collection;
 
+@Entity
 public class Category {
-
+    @Id
+    @GeneratedValue
     private String title;
     private String description;
+    @OneToMany
     private Collection<BlogPost> posts;
+
+    protected Category(){}
 
     public Category(String title, String description, Collection<BlogPost> posts) {
         this.title = title;

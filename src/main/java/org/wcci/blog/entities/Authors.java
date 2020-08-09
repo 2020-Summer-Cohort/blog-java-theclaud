@@ -1,14 +1,19 @@
 package org.wcci.blog.entities;
 
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import java.util.Collection;
 
-
+@Entity
 public class Authors {
-
-
+    @Id
+    @GeneratedValue
     private String firstName;
     private String lastName;
+    @OneToMany
     private Collection<BlogPost> posts;
 
     protected Authors(){}
