@@ -1,20 +1,20 @@
 package org.wcci.blog.storage;
 
+import org.springframework.stereotype.Service;
 import org.wcci.blog.entities.Authors;
+import org.wcci.blog.storage.repository.AuthorsRepository;
 
-import java.util.HashMap;
-import java.util.Map;
-
+@Service
 public class AuthorsStorage {
 
-    Map<String, Authors> hashtags = new HashMap<>();
+    AuthorsRepository authorsRepo;
 
-    public AuthorsStorage(){
-
+    public AuthorsStorage(AuthorsRepository authorsRepo){
+        this.authorsRepo = authorsRepo;
     }
 
     public Authors findAuthorByName(String authorName){
-        return null;
+        return authorsRepo.findByName(authorName);
     }
 
 }
