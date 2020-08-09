@@ -24,7 +24,7 @@ public class BlogPostController {
 
     @RequestMapping("blogPost/{postTitle}")
     public String showAllPosts(@PathVariable String postTitle, Model model) {
-        model.addAttribute("blogPost", blogPostStorage.findAllBlogPosts(postTitle));
+        model.addAttribute("blogPost", blogPostStorage.findAllBlogPosts());
         return "post-template";
     }
 

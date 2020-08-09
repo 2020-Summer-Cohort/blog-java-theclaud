@@ -16,6 +16,7 @@ public class BlogPost {
     private String postContent;
     private String author;
     private String postDate;
+    
     private Collection<Hashtags> hashtags;
 
 
@@ -26,7 +27,6 @@ public class BlogPost {
         this.postContent = postContent;
         this.author = author;
         this.postDate = postDate;
-//        this.hashtags = hashtags;
         this.hashtags = new ArrayList<>(Arrays.asList(hashtags));
     }
 

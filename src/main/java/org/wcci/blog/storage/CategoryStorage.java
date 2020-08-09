@@ -1,17 +1,23 @@
 package org.wcci.blog.storage;
 
+import org.springframework.stereotype.Service;
 import org.wcci.blog.entities.Category;
+import org.wcci.blog.storage.repository.CategoryRepository;
 
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
 
+@Service
 public class CategoryStorage {
 
-    private Map<String, Category> categories = new HashMap<>();
+    CategoryRepository categoryRepo;
 
-    public CategoryStorage(){
-//       categories.put("Top Dwelling Fish", new Category("Top Dwellers", "desc",null);
+    public CategoryStorage(CategoryRepository categoryRepo) {
+        this.categoryRepo = categoryRepo;
+
+
+
     }
 
     public Object findCategoryByTitle(String categoryTitle) {
