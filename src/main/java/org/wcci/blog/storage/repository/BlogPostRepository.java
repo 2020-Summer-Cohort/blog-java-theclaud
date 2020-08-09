@@ -5,7 +5,9 @@ import org.wcci.blog.entities.BlogPost;
 import java.util.HashMap;
 import java.util.Map;
 
-public class BlogPostRepository extends CrudRepository<BlogPost, Long> {
+public interface BlogPostRepository extends CrudRepository<BlogPost, Long> {
+    BlogPost findByTitle(String postTitle);
+    }
 
 //        Map<String, BlogPost> posts = new HashMap<>();
 //
